@@ -35,12 +35,12 @@ const AddUser = () => {
 
   return (
     <div className="addUser">
-      <Link to="/" type="button" class="btn btn-secondary">
-        <i class="fa-solid fa-backward"></i> Back
+      <Link to="/" type="button" className="btn btn-secondary">
+        <i className="fa-solid fa-backward"></i> Back
       </Link>
 
       <h3>Add New User</h3>
-      <form className="addUserForm" onSubmit={submitForm}>
+      <form className="submit-form" onSubmit={submitForm}>
         <div className="inputGroup">
           <label htmlFor="name">Name:</label>
           <input
@@ -50,6 +50,7 @@ const AddUser = () => {
             name="name"
             autoComplete="off"
             placeholder="Enter your Name"
+            className="input"
           />
         </div>
         <div className="inputGroup">
@@ -61,6 +62,7 @@ const AddUser = () => {
             name="email"
             autoComplete="off"
             placeholder="Enter your Email"
+            className="input"
           />
         </div>
         <div className="inputGroup">
@@ -72,10 +74,11 @@ const AddUser = () => {
             name="address"
             autoComplete="off"
             placeholder="Enter your Address"
+            className="input"
           />
         </div>
-        <div className="inputGroup">
-          <button type="submit" class="btn btn-primary">
+        <div className="inputGroup-btn">
+          <button type="submit" className="btn btn-primary">
             Submit
           </button>
         </div>

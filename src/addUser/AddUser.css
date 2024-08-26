@@ -1,37 +1,88 @@
-.addUser {
-  background-color: white;
-  width: 25%;
-  margin: 50px auto;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+@media screen and (min-width: 768px) {
+  .addUser {
+    background-color: white;
+    width: 50%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 5px;
+
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  }
+
+  .submit-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .addUserForm .inputGroup label {
+    margin-top: 10px;
+  }
+
+  .label {
+    margin-right: 10px;
+  }
+
+  .input {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    padding: 10px;
+  }
+
+  h3 {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: darkcyan;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+
+  .addUser .inputGroup button {
+    margin-top: 8px;
+  }
 }
 
-.addUserForm .inputGroup {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+@media screen and (max-width: 768px) {
+  .addUser {
+    background-color: white;
+    width: 98%;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  }
 
-.addUserForm .inputGroup label {
-  margin-top: 5px;
-}
+  .inputGroup {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.addUserForm .inputGroup input {
-  margin-bottom: 5px;
-  padding: 10px;
-}
+  input {
+    margin-left: 30px;
+  }
 
-.addUser h3 {
-  margin-top: 30px;
-  text-align: center;
-  font-weight: bold;
-  color: darkcyan;
-  text-transform: uppercase;
+  .addUser h3 {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: darkcyan;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
 
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-}
-
-.addUser .inputGroup button {
-  margin-top: 8px;
+  .inputGroup-btn {
+    text-align: center;
+    margin-top: 10px;
+  }
 }

@@ -36,7 +36,7 @@ const User = () => {
       <Link to="/add" type="button" className="btn btn-primary">
         Add User<i className="fa-solid fa-user-plus"></i>
       </Link>
-      <table className="table table-bordered">
+      <table className="table table-bordered table-user">
         <thead>
           <tr>
             <th scope="col">S.No</th>
@@ -61,14 +61,14 @@ const User = () => {
                   <Link
                     to={`/update/` + user._id}
                     type="button"
-                    class="btn btn-info"
+                    className="btn btn-info edit-btn"
                   >
-                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i className="fa-solid fa-pen-to-square"></i>
                   </Link>
 
                   <button
                     type="button"
-                    class="btn btn-danger"
+                    className="btn btn-danger edit-btn"
                     onClick={() => deleteUser(user._id)}
                   >
                     <i className="fa-solid fa-trash"></i>

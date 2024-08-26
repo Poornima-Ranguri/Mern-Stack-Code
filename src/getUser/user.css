@@ -1,28 +1,75 @@
-.userTable {
-  width: 80%;
-  margin: 50px auto;
-  background-color: white;
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+@media screen and (min-width: 768px) {
+  .userTable {
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  }
+
+  .userTable table {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .userTable table thead th {
+    background-color: darkcyan;
+    color: white;
+  }
+
+  .userTable table tbody td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .actionButtons button {
+    margin: 0 10px;
+  }
 }
 
-.userTable table {
-  width: 100%;
-  margin-top: 30px;
-}
+@media screen and (max-width: 768px) {
+  .userTable {
+    width: 90%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  }
 
-.userTable table thead th {
-  background-color: darkcyan;
-  color: white;
-}
+  .table-user {
+    width: 100px;
+    font-size: 10px;
+  }
 
-.userTable table tbody td {
-  padding: 10px;
-  text-align: center;
-  vertical-align: middle;
-}
+  .userTable table {
+    width: 100%;
+    margin-top: 20px;
+  }
 
-.actionButtons button {
-  margin: 0 10px;
+  .userTable table thead th {
+    background-color: darkcyan;
+    color: white;
+  }
+
+  .userTable table tbody td {
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .actionButtons button {
+    margin-right: 3px;
+  }
+
+  i {
+    font-size: 15px;
+  }
+
+  .edit-btn {
+    padding: 0px 3px 0px 3px;
+    margin-right: 2px;
+  }
 }
